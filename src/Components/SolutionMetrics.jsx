@@ -5,10 +5,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const metrics = [
-    { id: "bills-sent", value: 18, unit: "M", label: "Original Bills Sent", type: "number" },
-    { id: "bills-payment", value: 8.1, unit: "B", label: "Original Bills Payment", type: "currency" },
-    { id: "appeals-sent", value: 1.8, unit: "M", label: "Second Review ", type: "number" },
-    { id: "appeal-payments", value: 12, unit: "M", label: "Appeal Payments", type: "currency" },
+    { id: "Years with you", value: 5, unit: "+", label: "Years with you", type: "number" },
+    { id: "bills-payment", value: 7, unit: "+", label: "Practices", type: "currency" },
+    { id: "appeals-sent", value: 20, unit: "+", label: "Providers ", type: "number" },
+    { id: "appeal-payments", value: 1, unit: "", label: "Laboratories", type: "currency" },
 ];
 
 const formatValue = (val, type) => {

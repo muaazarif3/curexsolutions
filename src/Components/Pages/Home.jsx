@@ -57,9 +57,7 @@ const Home = () => {
         <main className="font-lato absolute w-full h-full z-10 flex flex-col justify-center min-h-screen px-4 sm:px-6 lg:px-12 py-16">
           <div className="text-white max-w-2xl">
             {/* BOOST */}
-            <p className="hero-script-text text-4xl mb-4 text-primary tracking-wider">
-              BOOST
-            </p>
+        
 
             {/* MAIN HEADING */}
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight leading-tight uppercase">
@@ -89,7 +87,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 capitalize">
             {/* Card 1 */}
             <Card
               icon="shield_with_heart"
@@ -111,7 +109,12 @@ const Home = () => {
 
             <Card
               icon="spa"
-              title="Appointment scheduling"
+              title="Appointment Scheduling"
+              description="Customized plans to help you achieve your health and lifestyle goals."
+            />
+            <Card
+              icon="spa"
+              title="Client Services"
               description="Customized plans to help you achieve your health and lifestyle goals."
             />
             <Card
@@ -121,17 +124,12 @@ const Home = () => {
             />
             <Card
               icon="spa"
-              title="bpo services"
+              title="Website Development & Desiging"
               description="Customized plans to help you achieve your health and lifestyle goals."
             />
             <Card
               icon="spa"
-              title="Website Development"
-              description="Customized plans to help you achieve your health and lifestyle goals."
-            />
-            <Card
-              icon="spa"
-              title="Website Designing"
+              title="Other Services"
               description="Customized plans to help you achieve your health and lifestyle goals."
             />
 

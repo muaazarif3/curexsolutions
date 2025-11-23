@@ -42,51 +42,51 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 capitalize">
             {/* Card 1 */}
-  <Card
-  icon="shield_with_heart"
-  title="Revenue Cycle Management"
-  description="Proactive health screenings and check-ups to maintain your well-being."
-/>
+            <Card
+              icon="shield_with_heart"
+              title="Revenue Cycle Management"
+              description="Proactive health screenings and check-ups to maintain your well-being."
+            />
 
-<Card
-  icon="biotech"
-  title="Medical Billing Outsourcing"
-  description="Advanced imaging and lab tests for accurate and timely diagnoses."
-/>
+            <Card
+              icon="biotech"
+              title="Medical Billing Outsourcing"
+              description="Advanced imaging and lab tests for accurate and timely diagnoses."
+            />
 
-<Card
-  icon="medication"
-  title="Provider Credentialing"
-  description="Expert care for chronic conditions and specialized medical needs."
-/>
+            <Card
+              icon="medication"
+              title="Provider Credentialing"
+              description="Expert care for chronic conditions and specialized medical needs."
+            />
 
-<Card
-  icon="spa"
-  title="Appointment scheduling"
-  description="Customized plans to help you achieve your health and lifestyle goals."
-/>
-<Card
-  icon="spa"
-  title="Customer Support"
-  description="Customized plans to help you achieve your health and lifestyle goals."
-/>
-<Card
-  icon="spa"
-  title="bpo services"
-  description="Customized plans to help you achieve your health and lifestyle goals."
-/>
-<Card
-  icon="spa"
-  title="Website Development"
-  description="Customized plans to help you achieve your health and lifestyle goals."
-/>
-<Card
-  icon="spa"
-  title="Website Designing"
-  description="Customized plans to help you achieve your health and lifestyle goals."
-/>
+            <Card
+              icon="spa"
+              title="Appointment Scheduling"
+              description="Customized plans to help you achieve your health and lifestyle goals."
+            />
+            <Card
+              icon="spa"
+              title="Client Services"
+              description="Customized plans to help you achieve your health and lifestyle goals."
+            />
+            <Card
+              icon="spa"
+              title="Customer Support"
+              description="Customized plans to help you achieve your health and lifestyle goals."
+            />
+            <Card
+              icon="spa"
+              title="Website Development & Desiging"
+              description="Customized plans to help you achieve your health and lifestyle goals."
+            />
+            <Card
+              icon="spa"
+              title="Other Services"
+              description="Customized plans to help you achieve your health and lifestyle goals."
+            />
 
 
 
@@ -95,7 +95,7 @@ export default function Services() {
         </div>
       </section>
 
-            <Review />
+      <Review />
 
       {/* FAQ Section */}
       <section className="py-20 sm:py-24">

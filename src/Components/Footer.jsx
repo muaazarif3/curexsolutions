@@ -28,7 +28,7 @@ function Footer() {
                     {/* Contact Info */}
                     <div className="flex flex-col gap-2 mt-3 text-gray-700 text-sm">
                         <p className="flex items-center gap-2">
-                            <FaPhoneAlt className="text-[#005A9C]" /> +92 370 0968674
+                            <FaPhoneAlt className="text-[#005A9C]" /> +92 370 0968677
 
                         </p>
                         <p className="flex items-center gap-2">
@@ -51,7 +51,6 @@ function Footer() {
                     <a href="#" className="hover:opacity-70"><FaInstagram /></a>
                     <a href="#" className="hover:opacity-70"><FaTwitter /></a>
                     <a href="#" className="hover:opacity-70"><FaLinkedinIn /></a>
-                    <a href="#" className="hover:opacity-70"><FaYoutube /></a>
                 </div>
 
             </div>

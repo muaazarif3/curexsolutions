@@ -39,9 +39,9 @@ const Header = () => {
 
                     <nav className="hidden md:flex items-center space-x-4">
                         <Link to="/" className="hover:underline">Home</Link>
-                        <Link to="/about" className="hover:underline">About</Link>
-                        <Link to="/contact" className="hover:underline">Contact</Link>
-                        <Link to="/services" className="hover:underline">Service</Link>
+                        <Link to="/about" className="hover:underline">About Us</Link>
+                        <Link to="/contact" className="hover:underline">Contact Us</Link>
+                        <Link to="/services" className="hover:underline">Services</Link>
                         <a
                             href="tel:+1234567890"
                             className="w-full lg:w-auto px-6 py-2 text-white font-semibold rounded-lg bg-primary 
@@ -49,7 +49,7 @@ const Header = () => {
                        flex  gap-2 justify-center items-center shadow-xl hover:shadow-cyan-500/50 
                        max-w-xs mx-auto" // Added max-width and margin auto for centering/desktop visibility
                         >
-                            Discovery Call
+                            Request Demo
                            <FaArrowRightLong className="mt-1" />
                         </a>
                     </nav>

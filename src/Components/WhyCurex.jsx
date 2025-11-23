@@ -22,7 +22,7 @@ const WhyCurex = () => {
         {/* Left Column */}
         <div className="w-full lg:w-1/2 space-y-8 text-gray-800">
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
-            Why <span className="text-primary border-b-4 border-primary pb-1">MLM</span>
+            Why <span className="text-primary border-b-4 border-primary pb-1">Curex</span>
           </h1>
           <p className="text-lg text-gray-600 max-full">
             Supercharge Your Earnings and Bid Farewell to Insurance Hassles with MLM's RCM and Medical Billing Marvel! Our 35 years of industry dominance is powered by:
@@ -42,7 +42,7 @@ const WhyCurex = () => {
               We've got your back every step of the way.
             </p>
             <button className="px-6 py-3 relative bg-primary text-white font-bold rounded-xl shadow-lg hover:bg-teal-700 transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50 flex items-center gap-2">
-             Contatc Us + 
+             Contatc Us 
             </button>
           </div>
         </div>
