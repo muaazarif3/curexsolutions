@@ -48,25 +48,25 @@ const DMEIcon = (props) => (
   </svg>
 );
 
-const RehabilitationIcon = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor"
-    strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M14 6H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-3" />
-    <path d="M22 17h-2a2 2 0 0 0-2 2v1" />
-    <path d="M8 6v12M4 14h8" />
-    <path d="M18 3v6M15 6h6" />
-  </svg>
-);
+// const RehabilitationIcon = (props) => (
+//   <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor"
+//     strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+//     <path d="M14 6H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-3" />
+//     <path d="M22 17h-2a2 2 0 0 0-2 2v1" />
+//     <path d="M8 6v12M4 14h8" />
+//     <path d="M18 3v6M15 6h6" />
+//   </svg>
+// );
 
 
 // ---------------- Data ----------------
 
 const specialities = [
-  { title: "Treatment Collections.", subtitle: "(PTP/STP)", icon: TreatmentIcon },
-  { title: "Medlegal Collections.", subtitle: "(PQME/AME)", icon: MedlegalIcon },
-  { title: "Diagnostics Collections.", subtitle: "", icon: DiagnosticsIcon },
-  { title: "Durable Medical Equipment", subtitle: "(DME)", icon: DMEIcon },
-  { title: "Rehabilitation Collections.", subtitle: "", icon: RehabilitationIcon },
+  { title: "Dentist", subtitle: "", icon: TreatmentIcon },
+  { title: "Cardiologist", subtitle: "", icon: MedlegalIcon },
+  { title: "Dermatologist", subtitle: "", icon: DiagnosticsIcon },
+  { title: "Clinical Laboratory", subtitle: "", icon: DMEIcon },
+  // { title: "Rehabilitation Collections.", subtitle: "", icon: RehabilitationIcon },
 ];
 
 
@@ -116,7 +116,7 @@ export default function OurSpecial() {
         </h2>
 
         <div className="bg-white rounded-3xl shadow-xl py-2 border border-gray-100">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 p-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-12">
 
             {specialities.map((item, i) => {
               const Icon = item.icon;
