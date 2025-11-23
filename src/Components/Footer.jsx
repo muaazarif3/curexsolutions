@@ -32,7 +32,7 @@ function Footer() {
 
                         </p>
                         <p className="flex items-center gap-2">
-                            <FaEnvelope className="text-[#005A9C]" /> Info@curex.solutions  muaaz
+                            <FaEnvelope className="text-[#005A9C]" /> Info@curex.solutions
                         </p>
                     </div>
                 </div>
