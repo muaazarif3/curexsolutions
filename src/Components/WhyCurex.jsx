@@ -2,12 +2,15 @@
 import { FaCheckCircle } from "react-icons/fa";
 import DcImage from '../assets/dc.png';
 const features = [
-  "Cutting-edge proprietary Tech",
-  "In-house Clearing House",
-  "Jet File Engine",
-  "Funding Partnership",
-  "Expertise in Denied Claims",
-  "Collection Management Services",
+  "End-to-end medical billing & RCM support",
+  "Lower denials, higher collections",
+  "Cost-effective outsourcing solution",
+  "HIPAA-compliant & secure processes",
+  "Real-time reporting and full transparency",
+  "Faster payments and improved cash flow",
+  "Specialized billing for all medical specialties",
+  "Dedicated account managers and quick support"
+
 ];
 
 
@@ -18,15 +21,14 @@ const WhyCurex = () => {
   return (
     <section className="min-h-screen bg-gradient-to-br from-blue-50 to-teal-50 py-16 lg:py-24 rounded-xl m-4 shadow-xl overflow-hidden">
       <div className="container mx-auto max-w-7xl px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-12">
-        
+
         {/* Left Column */}
         <div className="w-full lg:w-1/2 space-y-8 text-gray-800">
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
             Why <span className="text-primary border-b-4 border-primary pb-1">Curex</span>
           </h1>
           <p className="text-lg text-gray-600 max-full">
-            Supercharge Your Earnings and Bid Farewell to Insurance Hassles with MLM's RCM and Medical Billing Marvel! Our 35 years of industry dominance is powered by:
-          </p>
+            Expert medical billing that delivers accuracy, compliance, and faster reimbursements—streamlining revenue while allowing your practice to stay fully focused on exceptional patient care.</p>
 
           <ul className="space-y-3 pt-4">
             {features.map((feature, i) => (
@@ -42,7 +44,7 @@ const WhyCurex = () => {
               We've got your back every step of the way.
             </p>
             <button className="px-6 py-3 relative bg-primary text-white font-bold rounded-xl shadow-lg hover:bg-teal-700 transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50 flex items-center gap-2">
-             Contatc Us 
+              Contatc Us
             </button>
           </div>
         </div>
@@ -59,7 +61,7 @@ const WhyCurex = () => {
                   "https://placehold.co/450x450/38a169/ffffff?text=Doctor+Image+Placeholder";
               }}
             />
-         
+
           </div>
         </div>
       </div>

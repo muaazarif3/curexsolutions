@@ -2,6 +2,8 @@ import React from "react";
 import Review from "../Review";
 import Card from "../Card";
 
+import frame from '../../assets/services.jpg';
+
 
 
 export default function Services() {
@@ -14,7 +16,7 @@ export default function Services() {
             className="absolute inset-0 bg-cover bg-center -z-10"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(0, 90, 156, 0.5) 0%, rgba(0, 40, 70, 0.7) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDd8OKV-obdXSrmvRuESMPMMDiNWmoCvh4T7tSEbxp2wpdOPKNcxAoPcQtFB3MprEYIETPqcPW_gFxOSV5NeqmosDLN6MXlPy_QBLnAl6HQ6fWOL5TxQtvg93CjNlyUaPIprEcn7ESPnPtgI4hnu1GR-MDJwYFLtqok6891Ur-Nzgk2VjIhu-rw6tJOGck1BkGZyP1rZ1-t1p75kM0MRosbV7YptjyxPJ9W3lebPsgJnEsj2TqTfSR3Bt5SVBzmDzJOOI1slxdqdUIK')",
+                `url(${frame})`,
             }}
           ></div>
 
@@ -22,10 +24,7 @@ export default function Services() {
             <h1 className="text-white text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               Comprehensive Care Tailored For You
             </h1>
-            <p className="mt-6 text-lg font-normal leading-8 text-gray-200">
-              Our philosophy is rooted in providing personalized, compassionate
-              care to every patient who walks through our doors.
-            </p>
+          
           </div>
         </div>
       </section>
@@ -35,10 +34,10 @@ export default function Services() {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-12">
             <h2 className="text-3xl text-black font-bold tracking-tight sm:text-4xl">
-              Our Medical Services
+              Our Services
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
-              We offer a wide range of services to meet your health needs.
+              We offer a wide range of services to meet your needs.
             </p>
           </div>
 

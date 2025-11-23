@@ -5,6 +5,7 @@ import OurSpecial from "../OurSpecial";
 import Review from "../Review";
 import Card from "../Card";
 import Vid from '../../assets/hervid.mp4';
+import { FaFileMedical } from "react-icons/fa";
 
 // Inline Style for Script-Style "BOOST"
 const CustomStyles = () => (
@@ -80,7 +81,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-12">
             <h2 className="text-3xl text-black font-bold tracking-tight sm:text-4xl">
-              Our Medical Services
+              Our Services
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
               We offer a wide range of services to meet your health needs.
@@ -90,7 +91,7 @@ const Home = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 capitalize">
             {/* Card 1 */}
             <Card
-              icon="shield_with_heart"
+              icon=<FaFileMedical />
               title="Revenue Cycle Management"
               description="Proactive health screenings and check-ups to maintain your well-being."
             />

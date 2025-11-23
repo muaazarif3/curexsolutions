@@ -39,9 +39,9 @@ const Header = () => {
 
                     <nav className="hidden md:flex items-center space-x-4">
                         <Link to="/" className="hover:underline">Home</Link>
-                        <Link to="/about" className="hover:underline">About Us</Link>
-                        <Link to="/contact" className="hover:underline">Contact Us</Link>
                         <Link to="/services" className="hover:underline">Services</Link>
+                        <Link to="/contact" className="hover:underline">Contact Us</Link>
+                        <Link to="/about" className="hover:underline">About Us</Link>
                         <a
                             href="tel:+1234567890"
                             className="w-full lg:w-auto px-6 py-2 text-white font-semibold rounded-lg bg-primary 

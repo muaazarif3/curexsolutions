@@ -2,6 +2,9 @@ import React from "react";
 import { CiHeart } from "react-icons/ci";
 import { FaLightbulb } from "react-icons/fa6";
 import { SiFsecure } from "react-icons/si";
+import frame from '../../assets/contact.png';
+
+
 
 // -------------------------------------
 // Reusable ValueCard Component
@@ -33,14 +36,14 @@ export default function AboutPage() {
       <section className="@container">
         <div
           className="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-4 text-center"
-          style={{
-            backgroundImage:
-              'linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDl_sCDsrAczWQugswD9gv_v0QlcdJGH3ysZQeP4mTtWGf5WXrw7k4CUCiOVg_jOiwNeg-LF56XSXj1uzO9UFuTJt0oxMRhjL2yvZLyLvmQaJSI999va01r57-9WDXeQQzapfMk2eTuMvkJUQzP8kHTdEPk-x8XXax32cKQxRsAtGwpr2VI92HnNpUcVHaXKo_HdqQ02682pa2ir6hqdhkHUyDeu2xy5ydrObCUBQk9JHiwDPycslCzPUTs9MXPw5wBmCa55QHuW2Nk")',
-          }}
+            style={{
+                       backgroundImage:
+                         `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url(${frame})`,
+                     }}
         >
           <div className="flex flex-col gap-2 max-w-3xl">
             <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
-              Pioneering a Healthier Future
+                     Bringing Clarity to <br/> Heathcare Revenue
             </h1>
             <h2 className="text-white text-sm @[480px]:text-base">
               Learn more about our journey, mission, and the team behind your care.
