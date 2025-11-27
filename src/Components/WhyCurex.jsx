@@ -1,6 +1,7 @@
 
 import { FaCheckCircle } from "react-icons/fa";
 import DcImage from '../assets/dc.png';
+import { Link } from "react-router-dom";
 const features = [
   "End-to-end medical billing & RCM support",
   "Lower denials, higher collections",
@@ -28,7 +29,7 @@ const WhyCurex = () => {
             Why <span className="text-primary border-b-4 border-primary pb-1">Curex</span>
           </h1>
           <p className="text-lg text-gray-600 max-full">
-            Expert medical billing that delivers accuracy, compliance, and faster reimbursements—streamlining revenue while allowing your practice to stay fully focused on exceptional patient care.</p>
+            Expert medical billing that delivers accuracy, compliance, and faster reimbursements streamlining revenue while allowing your practice to stay fully focused on exceptional patient care.</p>
 
           <ul className="space-y-3 pt-4">
             {features.map((feature, i) => (
@@ -43,9 +44,9 @@ const WhyCurex = () => {
             <p className="text-gray-700 mb-4 font-semibold italic">
               We've got your back every step of the way.
             </p>
-            <button className="px-6 py-3 relative bg-primary text-white font-bold rounded-xl shadow-lg hover:bg-teal-700 transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50 flex items-center gap-2">
+            <Link to="/contact" className="px-6 py-3 relative bg-primary text-white font-bold rounded-xl shadow-lg hover:bg-teal-700 transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-primary w-max focus:ring-opacity-50 flex items-center gap-2">
               Contatc Us
-            </button>
+            </Link>
           </div>
         </div>
 

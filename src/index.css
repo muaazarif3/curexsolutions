@@ -7,3 +7,7 @@
       --color-primary: #0B90AF;
         --font-lato: "Lato", sans-serif;
     }
+
+    *{
+      font-family: "Lato", sans-serif;
+    }

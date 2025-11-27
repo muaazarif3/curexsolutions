@@ -1,9 +1,14 @@
 import React from "react";
 import Review from "../Review";
 import Card from "../Card";
-
+import { FaArrowDown, FaFileMedical, FaRev } from "react-icons/fa";
+import { CiInboxOut } from "react-icons/ci";
+import { RiCalendarScheduleLine } from "react-icons/ri";
+import { MdDisplaySettings, MdOutlineMedicalServices, MdOutlineSupportAgent } from "react-icons/md";
+import { CgWebsite } from "react-icons/cg";
 import frame from '../../assets/services.jpg';
 
+import { Link } from "react-router-dom";
 
 
 export default function Services() {
@@ -24,7 +29,7 @@ export default function Services() {
             <h1 className="text-white text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               Comprehensive Care Tailored For You
             </h1>
-          
+
           </div>
         </div>
       </section>
@@ -44,47 +49,51 @@ export default function Services() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 capitalize">
             {/* Card 1 */}
             <Card
-              icon="shield_with_heart"
+              icon={<FaRev />}
               title="Revenue Cycle Management"
-              description="Proactive health screenings and check-ups to maintain your well-being."
+              description="Streamline billing and maximize revenue efficiency."
             />
 
             <Card
-              icon="biotech"
+              icon={<CiInboxOut />}
               title="Medical Billing Outsourcing"
-              description="Advanced imaging and lab tests for accurate and timely diagnoses."
+              description="Outsource billing tasks for accurate claims processing."
             />
 
             <Card
-              icon="medication"
+              icon={<MdDisplaySettings />}
               title="Provider Credentialing"
-              description="Expert care for chronic conditions and specialized medical needs."
+              description="Ensure providers meet all regulatory standards."
             />
 
             <Card
-              icon="spa"
+              icon={<RiCalendarScheduleLine />}
               title="Appointment Scheduling"
-              description="Customized plans to help you achieve your health and lifestyle goals."
+              description="Manage appointments efficiently and reduce no-shows."
             />
+
             <Card
-              icon="spa"
+              icon={<MdOutlineMedicalServices />}
               title="Client Services"
-              description="Customized plans to help you achieve your health and lifestyle goals."
+              description="Deliver high-quality support to your patients."
             />
+
             <Card
-              icon="spa"
+              icon={<MdOutlineSupportAgent />}
               title="Customer Support"
-              description="Customized plans to help you achieve your health and lifestyle goals."
+              description="Provide reliable assistance to resolve client issues."
             />
+
             <Card
-              icon="spa"
-              title="Website Development & Desiging"
-              description="Customized plans to help you achieve your health and lifestyle goals."
+              icon={<CgWebsite />}
+              title="Website Development & Designing"
+              description="Build professional websites tailored to your business."
             />
+
             <Card
-              icon="spa"
+              icon={<FaFileMedical />}
               title="Other Services"
-              description="Customized plans to help you achieve your health and lifestyle goals."
+              description="BPO & additional healthcare support services."
             />
 
 
@@ -109,20 +118,29 @@ export default function Services() {
           </div>
 
           <div className="space-y-4">
-            {[1, 2, 3].map((i) => (
-              <details
-                key={i}
-                className="group rounded-lg bg-[#F0F4F8] p-6"
-              >
+            {[
+              {
+                question: "How do you ensure accurate and timely billing?",
+                answer: "We use certified coders and automated workflows to submit clean claims quickly."
+              },
+              {
+                question: "Is my patient data secure?",
+                answer: "Yes our processes are fully HIPAA-compliant with strict data protection measures."
+              },
+              {
+                question: "What is the cost structure?",
+                answer: "We offer transparent pricing, typically a percentage of collections or a fixed monthly fee."
+              }
+            ].map((item, i) => (
+              <details key={i} className="group rounded-lg bg-[#F0F4F8] p-6">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-                  <h2 className="font-medium text-black">What should I bring?</h2>
-                  <span className="material-symbols-outlined transition duration-300 group-open:rotate-180">
-                    expand_more
+                  <h2 className="font-medium text-black">{item.question}</h2>
+                  <span className="material-symbols-outlined text-primary transition duration-300 group-open:rotate-180">
+                    <FaArrowDown />
                   </span>
                 </summary>
                 <p className="mt-4 leading-relaxed text-gray-700">
-                  Please bring ID, insurance card, medications, and medical
-                  records.
+                  {item.answer}
                 </p>
               </details>
             ))}
@@ -133,7 +151,7 @@ export default function Services() {
       <section className="bg-gradient-to-br from-blue-50 to-teal-50 px-4 sm:px-10 lg:px-20 py-16">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center gap-6">
           <h2 className="text-3xl font-bold text-[#111813]">
-            Ready to Join Us on Your Health Journey?
+            Ready to Join Us on Your Journey?
           </h2>
 
           <p className="text-[#333]">
@@ -141,13 +159,13 @@ export default function Services() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-2">
-            <button className="h-12 px-6 rounded-lg bg-primary text-white font-bold">
+            <Link to="/services" className="h-12 px-6 flex items-center justify-center rounded-lg bg-primary text-white font-bold">
               Explore Our Services
-            </button>
+            </Link>
 
-            <button className="h-12 px-6 rounded-lg bg-white dark:bg-gray-700 text-[#111813] dark:text-white font-bold">
+            <Link to="/contact" className="h-12 px-6 flex items-center justify-center rounded-lg bg-white dark:bg-gray-700 text-[#111813] dark:text-white font-bold">
               Get In Touch
-            </button>
+            </Link>
           </div>
         </div>
       </section>

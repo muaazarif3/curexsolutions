@@ -3,6 +3,7 @@ import { CiHeart } from "react-icons/ci";
 import { FaLightbulb } from "react-icons/fa6";
 import { SiFsecure } from "react-icons/si";
 import frame from '../../assets/contact.png';
+import { Link } from "react-router-dom";
 
 
 
@@ -36,14 +37,14 @@ export default function AboutPage() {
       <section className="@container">
         <div
           className="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-4 text-center"
-            style={{
-                       backgroundImage:
-                         `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url(${frame})`,
-                     }}
+          style={{
+            backgroundImage:
+              `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url(${frame})`,
+          }}
         >
           <div className="flex flex-col gap-2 max-w-3xl">
             <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
-                     Bringing Clarity to <br/> Heathcare Revenue
+              Bringing Clarity to <br /> Heathcare Revenue
             </h1>
             <h2 className="text-white text-sm @[480px]:text-base">
               Learn more about our journey, mission, and the team behind your care.
@@ -60,8 +61,7 @@ export default function AboutPage() {
               Our Mission
             </h2>
             <p className="text-[#333]  leading-relaxed">
-              Our mission is to provide compassionate, high-quality, and accessible healthcare
-              to our community. We believe in innovation, integrity, and a patient-first approach.
+              Our mission is to simplify healthcare finances by delivering accurate, transparent, and efficient medical billing solutions. We strive to support providers with reliable revenue cycle management, reduce administrative burdens, and ensure timely reimbursements so they can focus on what matters most: delivering exceptional patient care.
             </p>
           </div>
 
@@ -85,20 +85,20 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <ValueCard
               icon={<CiHeart />}
-              title="Compassion"
-              text="We treat every patient with empathy and support."
+              title="Accuracy & Compliance"
+              text="We uphold the highest standards of precision and regulatory compliance to ensure error-free billing and trustworthy financial outcomes."
             />
 
             <ValueCard
               icon={<FaLightbulb />}
-              title="Innovation"
-              text="We embrace medical innovation for better outcomes."
+              title="Transparency & Integrity"
+              text="We communicate openly, act ethically, and build lasting partnerships through honesty and accountability in every step of the billing process."
             />
 
             <ValueCard
-              icon= {<SiFsecure />}
-              title="Integrity"
-              text="We uphold honesty, professionalism, and responsibility."
+              icon={<SiFsecure />}
+              title="Client-Centered Excellence"
+              text="We prioritize the needs of healthcare providers by delivering responsive service, timely results, and solutions that enhance both efficiency and patient satisfaction."
             />
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-blue-50 to-teal-50 px-4 sm:px-10 lg:px-20 py-16">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center gap-6">
           <h2 className="text-3xl font-bold text-[#111813]">
-            Ready to Join Us on Your Health Journey?
+            Ready to Join Us on Your Journey?
           </h2>
 
           <p className="text-[#333]">
@@ -116,13 +116,13 @@ export default function AboutPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-2">
-            <button className="h-12 px-6 rounded-lg bg-primary text-white font-bold">
+            <Link to="/services"  className="h-12 px-6 flex items-center justify-center rounded-lg bg-primary text-white font-bold">
               Explore Our Services
-            </button>
+            </Link>
 
-            <button className="h-12 px-6 rounded-lg bg-white dark:bg-gray-700 text-[#111813] dark:text-white font-bold">
+            <Link to="/contact" className="h-12 px-6 flex items-center justify-center rounded-lg bg-white dark:bg-gray-700 text-[#111813] dark:text-white font-bold">
               Get In Touch
-            </button>
+            </Link>
           </div>
         </div>
       </section>

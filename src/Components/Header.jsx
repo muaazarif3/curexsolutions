@@ -42,16 +42,13 @@ const Header = () => {
                         <Link to="/services" className="hover:underline">Services</Link>
                         <Link to="/contact" className="hover:underline">Contact Us</Link>
                         <Link to="/about" className="hover:underline">About Us</Link>
-                        <a
-                            href="tel:+1234567890"
-                            className="w-full lg:w-auto px-6 py-2 text-white font-semibold rounded-lg bg-primary 
+                       
+                       <Link to="/contact" className="w-full lg:w-auto px-6 py-2 text-white font-semibold rounded-lg bg-primary 
                        hover:bg-cyan-600 transition-all duration-200 ease-in-out 
                        flex  gap-2 justify-center items-center shadow-xl hover:shadow-cyan-500/50 
-                       max-w-xs mx-auto" // Added max-width and margin auto for centering/desktop visibility
-                        >
-                            Request Demo
+                       max-w-xs mx-auto" >     Request Demo
                            <FaArrowRightLong className="mt-1" />
-                        </a>
+                           </Link>
                     </nav>
 
                     <button className="md:hidden" onClick={() => setIsMenuOpen(true)}>
@@ -77,8 +74,9 @@ const Header = () => {
                 {/* Nav links */}
                 <nav className="space-y-6 text-white text-2xl flex flex-col  gap-2 font-medium">
                     <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
-                    <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
-                    <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+                    <Link to="/services" onClick={() => setIsMenuOpen(false)}>Services</Link>
+                    <Link to="/about" onClick={() => setIsMenuOpen(false)}>About us</Link>
+                    <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact us</Link>
                     <a
                         href="tel:+1234567890"
                         className="w-full lg:w-auto px-6 py-2 text-white font-semibold rounded-lg bg-primary 

@@ -8,7 +8,7 @@ const metrics = [
   { id: "years-with-you", value: 5, unit: "+", label: "Years with you", type: "number" },
   { id: "bills-payment", value: 7, unit: "+", label: "Practices", type: "number" },
   { id: "appeals-sent", value: 20, unit: "+", label: "Providers", type: "number" },
-  { id: "appeal-payments", value: 1, unit: "", label: "Laboratories", type: "number" },
+  { id: "appeal-payments", value: 1, unit: "", label: "Laboratory", type: "number" },
 ];
 
 const SolutionMetrics = () => {

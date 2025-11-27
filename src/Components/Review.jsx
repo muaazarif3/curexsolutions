@@ -5,20 +5,20 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // Reviews
 const reviews = [
   {
-    name: "Prénom NOM",
-    subtitle: "Lorem Lipsume",
-    text: "Medical Billing Management exceeded our expectations. Their expertise and dedication truly made a difference in our revenue.",
-  },
-  {
-    name: "Prénom NOM",
-    subtitle: "Lorem Lipsume",
-    text: "Medical Billing Management exceeded our expectations. Their expertise and dedication truly made a difference in our revenue.",
-  },
-  {
-    name: "Prénom NOM",
-    subtitle: "Lorem Lipsume",
-    text: "Medical Billing Management exceeded our expectations. Their expertise and dedication truly made a difference in our revenue.",
-  },
+  name: "Sarah Johnson",
+  subtitle: "Clinic Manager",
+  text: "The team’s professionalism and accuracy in billing made our workflow so much smoother."
+},
+{
+  name: "Michael Lee",
+  subtitle: "Healthcare Administrator",
+  text: "Outsourcing our medical billing was the best decision—claims are processed faster and errors reduced."
+},
+{
+  name: "Emily Davis",
+  subtitle: "Practice Owner",
+  text: "Their support and attention to detail in revenue cycle management exceeded our expectations."
+}
 ];
 
 // Simple star icon
@@ -43,7 +43,7 @@ const ReviewCard = ({ data }) => (
               d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
           </svg>
         </div>
-        <div>
+        <div className="flex flex-col items-start">
           <p className="font-semibold text-gray-800">{data.name}</p>
           <p className="text-sm text-gray-500">{data.subtitle}</p>
         </div>
@@ -88,11 +88,7 @@ const Review = () => {
             What Our Clients Say About Us
           </h2>
 
-          <div className="flex justify-center mt-4 mb-2">
-            {[...Array(5)].map((_, i) => <Star key={i} />)}
-          </div>
-
-          <p className="text-gray-600">Basée sur 1000+ avis</p>
+      
 
           <div className="text-2xl font-bold mt-1">
             <span className="text-[#4285F4]">G</span>

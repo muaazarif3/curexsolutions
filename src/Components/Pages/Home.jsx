@@ -5,7 +5,11 @@ import OurSpecial from "../OurSpecial";
 import Review from "../Review";
 import Card from "../Card";
 import Vid from '../../assets/hervid.mp4';
-import { FaFileMedical } from "react-icons/fa";
+import { FaFileMedical, FaRev } from "react-icons/fa";
+import { CiInboxOut } from "react-icons/ci";
+import { RiCalendarScheduleLine } from "react-icons/ri";
+import { MdDisplaySettings, MdOutlineMedicalServices, MdOutlineSupportAgent } from "react-icons/md";
+import { CgWebsite } from "react-icons/cg";
 
 // Inline Style for Script-Style "BOOST"
 const CustomStyles = () => (
@@ -58,7 +62,7 @@ const Home = () => {
         <main className="font-lato absolute w-full h-full z-10 flex flex-col justify-center min-h-screen px-4 sm:px-6 lg:px-12 py-16">
           <div className="text-white max-w-2xl">
             {/* BOOST */}
-        
+
 
             {/* MAIN HEADING */}
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight leading-tight uppercase">
@@ -84,56 +88,59 @@ const Home = () => {
               Our Services
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
-              We offer a wide range of services to meet your health needs.
+              We offer a wide range of services to meet your needs.
             </p>
           </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 capitalize">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 capitalize">
             {/* Card 1 */}
             <Card
-              icon=<FaFileMedical />
+              icon={<FaRev />}
               title="Revenue Cycle Management"
-              description="Proactive health screenings and check-ups to maintain your well-being."
+              description="Streamline billing and maximize revenue efficiency."
             />
 
             <Card
-              icon="biotech"
+              icon={<CiInboxOut />}
               title="Medical Billing Outsourcing"
-              description="Advanced imaging and lab tests for accurate and timely diagnoses."
+              description="Outsource billing tasks for accurate claims processing."
             />
 
             <Card
-              icon="medication"
+              icon={<MdDisplaySettings />}
               title="Provider Credentialing"
-              description="Expert care for chronic conditions and specialized medical needs."
+              description="Ensure providers meet all regulatory standards."
             />
 
             <Card
-              icon="spa"
+              icon={<RiCalendarScheduleLine />}
               title="Appointment Scheduling"
-              description="Customized plans to help you achieve your health and lifestyle goals."
-            />
-            <Card
-              icon="spa"
-              title="Client Services"
-              description="Customized plans to help you achieve your health and lifestyle goals."
-            />
-            <Card
-              icon="spa"
-              title="Customer Support"
-              description="Customized plans to help you achieve your health and lifestyle goals."
-            />
-            <Card
-              icon="spa"
-              title="Website Development & Desiging"
-              description="Customized plans to help you achieve your health and lifestyle goals."
-            />
-            <Card
-              icon="spa"
-              title="Other Services"
-              description="Customized plans to help you achieve your health and lifestyle goals."
+              description="Manage appointments efficiently and reduce no-shows."
             />
 
+            <Card
+              icon={<MdOutlineMedicalServices />}
+              title="Client Services"
+              description="Deliver high-quality support to your patients."
+            />
+
+            <Card
+              icon={<MdOutlineSupportAgent />}
+              title="Customer Support"
+              description="Provide reliable assistance to resolve client issues."
+            />
+
+            <Card
+              icon={<CgWebsite />}
+              title="Website Development & Designing"
+              description="Build professional websites tailored to your business."
+            />
+
+            <Card
+              icon={<FaFileMedical />}
+              title="Other Services"
+              description="BPO & additional healthcare support services."
+            />
 
 
 
