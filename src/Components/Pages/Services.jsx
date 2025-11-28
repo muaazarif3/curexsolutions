@@ -9,6 +9,7 @@ import { CgWebsite } from "react-icons/cg";
 import frame from '../../assets/services.jpg';
 
 import { Link } from "react-router-dom";
+import OurSpecial from "../OurSpecial";
 
 
 export default function Services() {
@@ -102,7 +103,7 @@ export default function Services() {
           </div>
         </div>
       </section>
-
+       <OurSpecial />
       <Review />
 
       {/* FAQ Section */}

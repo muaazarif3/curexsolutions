@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,12 +36,12 @@ function Card({ icon, title, description }) {
                 {description}
             </p>
 
-            <a
+            <Link
                 className="mt-2 text-sm font-semibold text-[#005A9C] hover:text-[#005A9C]/80"
-                href="#"
+                to="/contact"
             >
                 Learn More →
-            </a>
+            </Link>
         </div>
     );
 }
