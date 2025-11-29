@@ -60,7 +60,7 @@ const Home = () => {
 
         {/* HERO SECTION */}
         <main className="font-lato absolute w-full h-full z-10 flex flex-col justify-center min-h-screen px-4 sm:px-6 lg:px-12 py-16">
-          <div className="text-white max-w-2xl">
+          <div className="text-white max-w-2xl mt-4">
             {/* BOOST */}
 
 

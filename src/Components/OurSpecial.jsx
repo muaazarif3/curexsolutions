@@ -122,9 +122,9 @@ const DMEIcon = (props) => {
 // ---------------- Data ----------------
 
 const specialities = [
-  { title: "Dentist", subtitle: "", icon: TreatmentIcon },
-  { title: "Cardiologist", subtitle: "", icon: MedlegalIcon },
-  { title: "Dermatologist", subtitle: "", icon: DiagnosticsIcon },
+  { title: "Dental", subtitle: "", icon: TreatmentIcon },
+  { title: "Cardiology", subtitle: "", icon: MedlegalIcon },
+  { title: "Dermatology", subtitle: "", icon: DiagnosticsIcon },
   { title: "Clinical Laboratory", subtitle: "", icon: DMEIcon },
   // { title: "Rehabilitation Collections.", subtitle: "", icon: RehabilitationIcon },
 ];

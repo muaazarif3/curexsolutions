@@ -29,14 +29,14 @@ const Header = () => {
     return (
         <>
             {/* Fixed Header */}
-            <header className=" text-white absolute px-16 py-8 top-0 left-0 w-full z-40">
-                <div className="container mx-auto flex justify-between items-center">
-                    <div className="text-xl font-bold">
-                      <img src={logo}
-                      className="w-40 h-40 absolute top-[-20%] left-0 md:top-[-35%]"
+            <header className=" text-white absolute px-16  top-[-5%]  left-0 w-full z-40">
+                <div className="container mx-auto flex justify-between  items-center">
+                    <div className="w-40 h-40">
+                           <img src={logo}
+                      className="w-full h-full"
                       alt="" />
                     </div>
-
+                   
                     <nav className="hidden md:flex items-center space-x-4">
                         <Link to="/" className="hover:underline">Home</Link>
                         <Link to="/services" className="hover:underline">Services</Link>
