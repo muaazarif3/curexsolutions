@@ -20,18 +20,18 @@ function Footer() {
                 {/* Logo + Contact */}
                 <div className="flex flex-col items-center md:items-start gap-3 ">
                    
-                   <div className=" absolute left-[43%]  bottom-[25%] ">
+                   <div className=" md:absolute left-[43%]  bottom-[25%] ">
                     <img
                         src={logo}
                         alt="Logo"
-                        className="h-44 w-auto"
+                        className="h-48 w-auto"
                     />
                     </div>
 
                     {/* Contact Info */}
                     <div className="flex flex-col gap-2 mt-3  text-gray-700 text-1xl">
                         <p className="flex items-center gap-2">
-                            <FaPhoneAlt className="text-[#005A9C]" /> +92 370 0968677
+                            <FaPhoneAlt className="text-[#005A9C]" /> +1 716 214 5530
 
                         </p>
                         <p className="flex items-center gap-2">
@@ -54,7 +54,7 @@ function Footer() {
                 <div className="flex justify-center md:justify-end gap-4 text-[#005A9C] text-2xl">
 
                     <a
-                        href="https://wa.me/923700968677"
+                        href="https://wa.me/17162145530"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:opacity-70"

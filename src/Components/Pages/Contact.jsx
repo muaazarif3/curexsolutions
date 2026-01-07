@@ -43,30 +43,32 @@ export default function Contact() {
             backgroundImage:
               `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url(${frame})`,
           }}
-        ></div>
+        >
+            <div className="flex flex-col gap-2 max-w-3xl">
+            <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+            Get in Touch
+            </h1>
+            <h2 className="text-white text-sm @[480px]:text-base">
+            We'd love to hear from you. Please fill out the form below or use our contact details to reach us.
+             </h2>
+          </div>
+        </div>
+
       </div>
       <div className="w-full relative bg-gray-50 py-16 px-4 md:px-10 lg:px-20">
 
         <div className="max-w-6xl mx-auto">
 
 
-          <h1 className="text-4xl font-bold text-gray-900 text-center mb-2">Get in Touch</h1>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            We'd love to hear from you. Please fill out the form below or use our contact details to reach us.
-          </p>
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-24">
             {/* Left Side: Contact Info */}
             <div>
               <h2 className="text-xl font-semibold mb-6">Contact Information</h2>
               <div className="space-y-4 text-gray-700">
-                <div>
-                  <p className="font-medium">Address</p>
-                  <p>70 E SUNRISE HWY STE 510 VALLEY STREAM NY 11581-1233</p>
-                </div>
+               
                 <div>
                   <p className="font-medium">Phone</p>
-                  <p>+92 (370) 0968677</p>
+                  <p>+1 716 214 5530</p>
                 </div>
                 <div>
                   <p className="font-medium">Email</p>

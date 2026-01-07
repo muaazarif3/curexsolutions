@@ -29,7 +29,7 @@ const Header = () => {
     return (
         <>
             {/* Fixed Header */}
-            <header className=" text-white absolute px-16  top-[-5%]  left-0 w-full z-40">
+            <header className=" text-white absolute md:px-16 px-4 pt-4 top-[-5%]  left-0 w-full z-40">
                 <div className="container mx-auto flex justify-between  items-center">
                     <div className="w-40 h-40">
                            <img src={logo}
@@ -78,7 +78,7 @@ const Header = () => {
                     <Link to="/about" onClick={() => setIsMenuOpen(false)}>About us</Link>
                     <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact us</Link>
                     <a
-                        href="tel:+1234567890"
+                       href="tel:+1 716 214 5530"
                         className="w-full lg:w-auto px-6 py-2 text-white font-semibold rounded-lg bg-primary 
                        hover:bg-cyan-600 transition-all duration-200 ease-in-out 
                        flex  gap-2 justify-center items-center shadow-xl hover:shadow-cyan-500/50 
