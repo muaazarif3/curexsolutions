@@ -1,5 +1,6 @@
 import React from "react";
 import logo from '../assets/logo.png';
+import mlogo from '../assets/m-logo.png';
 import {
     FaFacebookF,
     FaInstagram,
@@ -14,24 +15,32 @@ import { Link } from "react-router-dom";
 
 function Footer() {
     return (
-        <footer className="w-full bg-[#F0F4F8] py-12 relative">
+        <footer className="w-full bg-[#F0F4F8] py-2 md:py-12 relative">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 items-center">
 
                 {/* Logo + Contact */}
                 <div className="flex flex-col items-center md:items-start gap-3 ">
-                   
-                   <div className=" md:absolute left-[43%]  bottom-[25%] ">
+
+                    <div className=" absolute hidden md:block left-[43%] bottom-[25%]">
+                        <img
+                            src={logo}
+                            alt="Logo"
+                            className="h-48 w-auto"
+                        />
+                    </div>
+                    <div className=" block md:hidden  ">
                     <img
-                        src={logo}
+                        src={mlogo}
                         alt="Logo"
                         className="h-48 w-auto"
                     />
                     </div>
 
+
                     {/* Contact Info */}
                     <div className="flex flex-col gap-2 mt-3  text-gray-700 text-1xl">
                         <p className="flex items-center gap-2">
-                            <FaPhoneAlt className="text-[#005A9C]" /> +1 716 214 5530
+                            <FaPhoneAlt className="text-[#005A9C]" /> +1 (716) 214 5530
 
                         </p>
                         <p className="flex items-center gap-2">

@@ -31,11 +31,13 @@ const Header = () => {
             {/* Fixed Header */}
             <header className=" text-white absolute md:px-16 px-4 pt-4 top-[-5%]  left-0 w-full z-40">
                 <div className="container mx-auto flex justify-between  items-center">
+                    <Link to="/">
                     <div className="w-40 h-40">
                            <img src={logo}
                       className="w-full h-full"
                       alt="" />
                     </div>
+                    </Link>
                    
                     <nav className="hidden md:flex items-center space-x-4">
                         <Link to="/" className="hover:underline">Home</Link>
